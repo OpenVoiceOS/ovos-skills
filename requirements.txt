@@ -1,2 +1,1 @@
-ovos-core~=0.0.2a41[skills]
-ovos-core~=0.0.2a41[skills_lgpl]
+ovos-core[skills,skills_lgpl]~=0.0.2a41
