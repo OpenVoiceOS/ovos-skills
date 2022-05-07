@@ -1,4 +1,4 @@
-FROM openvoiceos/core:latest
+FROM openvoiceos/core:dev
 
 RUN apt-get install -y swig libfann-dev
 
