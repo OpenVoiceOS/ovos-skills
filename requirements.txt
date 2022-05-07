@@ -1,6 +1,2 @@
-ovos-core~=0.0.2a2
-adapt-parser~=0.5
-padatious~=0.4
-fann2==1.0.7
-padaos~=0.1
-lingua-franca~=0.4.2
+ovos-core~=0.0.2a41[skills]
+ovos-core~=0.0.2a41[skills_lgpl]
