@@ -16,8 +16,9 @@ RUN apt-get install -y swig libfann-dev
 COPY . /tmp/ovos-skills
 RUN pip3 install /tmp/ovos-skills
 
+
 # TODO remove this, missing dependency in ovos-core
-RUN pip3 install python-dateutil
+RUN pip3 install python-dateutil ovos-utils==0.0.21a1
 
 USER mycroft
 ENTRYPOINT mycroft-skills
