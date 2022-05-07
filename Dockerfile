@@ -10,9 +10,11 @@ RUN apt-get update && \
   apt-get clean && \
   useradd --no-log-init mycroft -m
 
-USER mycroft
 # the lines above are kept static so that docker layer is shared and cached among all containers
 RUN apt-get install -y swig libfann-dev
+
+USER mycroft
+
 
 COPY . /tmp/ovos-skills
 RUN pip3 install /tmp/ovos-skills
