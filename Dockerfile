@@ -13,13 +13,11 @@ RUN apt-get update && \
 # the lines above are kept static so that docker layer is shared and cached among all containers
 RUN apt-get install -y swig libfann-dev
 
-USER mycroft
-
-
 COPY . /tmp/ovos-skills
 RUN pip3 install /tmp/ovos-skills
 
 # TODO remove this, missing dependency in ovos-core
 RUN pip3 install python-dateutil
 
+USER mycroft
 ENTRYPOINT mycroft-skills
